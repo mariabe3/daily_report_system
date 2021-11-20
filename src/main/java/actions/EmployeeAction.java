@@ -40,6 +40,23 @@ public class EmployeeAction extends ActionBase {
      * @throws ServletException
      * @throws IOException
      */
+    private boolean checkAdmin() throws ServletException, IOException {
+
+        //セッションからログイン中の従業員情報を取得
+        EmployeeView ev = (EmployeeView) getSessionScope(AttributeConst.LOGIN_EMP);
+
+        //管理者でなければエラー画面を表示
+        if (ev.getAdminFlag() != AttributeConst.ROLE_ADMIN.getIntegerValue()) {
+
+            forward(ForwardConst.FW_ERR_UNKNOWN);
+            return false;
+
+        } else {
+
+            return true;
+        }
+
+    }
     public void destroy() throws ServletException, IOException {
 
         //CSRF対策 tokenのチェック
