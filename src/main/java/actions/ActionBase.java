@@ -138,6 +138,7 @@ public abstract class ActionBase {
      * セッションIDを取得する
      * @return セッションID
      */
+
     protected String getTokenId() {
         return request.getSession().getId();
     }
