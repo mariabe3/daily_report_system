@@ -25,11 +25,11 @@
 <input type="text" name="${AttributeConst.REP_TITLE.getValue()}" value="${report.title}" />
 <br /><br />
 
-<label for="${AttributeConst.REP_ATTENDANCE.getValue()}">出勤</label><br />
+<label for="${AttributeConst.REP_ATTENDANCE.getValue()}">出勤時間</label><br />
 <input type="time" name="${AttributeConst.REP_ATTENDANCE.getValue()}" value="${report.attendance}" />
 <br /><br />
 
-<label for="${AttributeConst.REP_LEAVING.getValue()}">退勤</label><br />
+<label for="${AttributeConst.REP_LEAVING.getValue()}">退勤時間</label><br />
 <input type="time" name="${AttributeConst.REP_LEAVING.getValue()}" value="${report.leaving}" />
 <br /><br />
 
