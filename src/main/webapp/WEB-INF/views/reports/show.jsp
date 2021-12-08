@@ -25,11 +25,11 @@
                 </tr>
                  <tr>
                     <th>出勤</th>
-                    <td><pre><c:out value="${report.attendance}" /></pre></td>
+                    <td><c:out value="${report.attendance}" /></td>
                 </tr>
                  <tr>
                     <th>退勤</th>
-                    <td><pre><c:out value="${report.leaving}" /></pre></td>
+                    <td><c:out value="${report.leaving}" /></td>
                 </tr>
                 <tr>
                     <th>内容</th>
